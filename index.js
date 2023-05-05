@@ -29,6 +29,10 @@ const rooms = [
 // Booking data
 const bookings = [];
 
+app.get("/", (req, res) => {
+  res.send("Welcome!!!");
+});
+
 // Routes
 app.get("/rooms", async (req, res) => {
   // Asynchronous function that retrieves all the available rooms
